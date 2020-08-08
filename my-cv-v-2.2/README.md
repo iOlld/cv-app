@@ -1,0 +1,1 @@
+https://zheka-ded.github.io/cv-app/my-cv-v-2.2/build/
