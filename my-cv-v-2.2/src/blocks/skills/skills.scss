@@ -1,0 +1,53 @@
+.skills{
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    &__wrap{
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__box{
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: animate 25s linear infinite;
+
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i) * 27.69deg)) translateZ(400px);
+            // -webkit-box-refrect: below 0px linear-gradient(transparent, transparent, #0004);
+            
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}

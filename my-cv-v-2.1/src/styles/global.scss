@@ -1,0 +1,27 @@
+// Переменные
+$white-tetx-color: #fff; // Белый цвет
+
+// Основные стили
+.body{
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 1920px;
+    // padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.body__wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+@import './adaptGlobal.scss';

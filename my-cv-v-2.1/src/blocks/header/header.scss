@@ -1,0 +1,98 @@
+.header{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    // background-color: #07097a;
+    // background-color: #495760;
+    background-color: #495760;
+    z-index: 100;
+    // transition: 0.3s all ease;
+    // -webkit-transition: 0.3s all ease;
+    // -moz-transition: 0.3s all ease;
+    // -ms-transition: 0.3s all ease;
+    // -o-transition: 0.3s all ease;
+
+    // transition-delay: 0.3s;
+    // background: transparent;
+
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        transition: 0.3s all ease;
+        -webkit-transition: 0.3s all ease;
+        -moz-transition: 0.3s all ease;
+        -ms-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+
+        .header__nav ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            li{
+                margin: 0px 20px;
+
+                // &:first-child{
+                //     margin-left: 0px;
+                // }
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    position: relative;
+                    transition: 0.4s;
+                    text-shadow: 1px 2px 2px #292c2c;
+    
+                    &:hover::before{
+                        width: 100%;
+                    }
+    
+                    &::before{
+                        content: attr(data-text);
+                        position: absolute;
+                        width: 0%;
+                        text-shadow: 1px 0px 0px rgb(191, 190, 199);
+                        overflow: hidden;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+
+        .header__logo-link{
+            // font-family: 'Trade Winds', cursive;
+            color: #fff;
+            font-size: 30px;
+            text-decoration: none;
+            // text-shadow: 0px 4px 2px rgb(0, 255, 242);
+            text-shadow: 0px 4px 2px #292c2c;
+        }
+
+    }
+}
+
+.header__scroll{
+    background-color: rgba(73, 87, 96, 0.9);
+    transition: 0.3s all ease;
+    box-shadow: 0px 1px 11px 2px #93b0c3;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.header-wrap__scroll{
+    padding: 5px 20px;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}

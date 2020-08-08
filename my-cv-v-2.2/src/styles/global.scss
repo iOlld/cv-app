@@ -1,0 +1,55 @@
+// Переменные
+$white-tetx-color: #fff; // Белый цвет
+
+// Основные стили
+.body{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.body__wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+h4{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    line-height: 3;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 10px;
+        background-image: url('../img/to-h4.png');
+        background-repeat: no-repeat;
+        left: 50%;
+        bottom: 15px;
+        transform: translateX(-50%);
+    }
+}
+
+h5{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+}
+
+
+@import './adaptGlobal.scss';
