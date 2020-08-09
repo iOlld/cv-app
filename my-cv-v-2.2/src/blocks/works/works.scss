@@ -43,19 +43,28 @@
             transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
             backface-visibility: hidden;
             text-align: center;
-            font-size: 22px;
+            font-size: 20px;
             border: 1px solid #fff;
+            // cursor: pointer;
         }
 
         .front{
-            background: black;
+            line-height: 1.3;
+            letter-spacing: 2px;
         }
         
         .back {
             background: black;
 
             a{
-                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                line-height: 1.2;
+                letter-spacing: 1.4px;
             }
         }
 
@@ -71,6 +80,18 @@
         .sh{
             background: url('../img/w4.png');
         }
+        .ourstory{
+            background: url('../img/w5.png');
+        }
+        .viterra{
+            background: url('../img/w6.png');
+        }
+        .aqualux{
+            background: url('../img/w7.png');
+        }
+        .todoapp{
+            background: url('../img/w8.png');
+        }
         
         .front::after {
             position: absolute;
@@ -83,6 +104,8 @@
             display: block;
             backface-visibility: hidden;
             border-radius: 5px;
+            background-color: #000;
+            opacity: 0.6;
         }
         
         .back {

@@ -55,4 +55,60 @@ a{
     text-decoration: none;
 }
 
+// анимация заголовков
+h4{
+    position: relative;
+    transition: 1.5s;
+}
+
+
+.span__title-active{
+    position: relative;
+    // color: rgb(37, 35, 35);
+    // // font-weight: 900;
+    color: transparent;
+    transition: 0.05s;
+}
+
+.span__title-active:before{
+    content: attr(data-text);
+    position: absolute;
+    font-weight: 900;
+    color: rgba(73, 87, 96, 0.9);
+    z-index: 1;
+    animation: spananimation ease-in-out 0.8s;
+
+}
+
+@keyframes spananimation{
+    6%{
+        transform: translateY(-1.3px)
+    }
+    9%{
+        transform: translateY(1.3px)
+    }
+    11%{
+        transform: translateX(1.3px);
+    }
+    17%{
+        transform: translateY(1.3px)
+    }
+    20%{
+        transform: translateY(-1.3px)
+    }
+    22%{
+        transform: translateX(-1.3px);
+    }
+    55%{
+        transform: scale(0.7);
+    }
+    80%{
+        transform: scale(2.5, 1.2);
+    }
+    100%{
+        transform: scale(1.4);
+    }
+}
+
+
 @import './adaptGlobal.scss';

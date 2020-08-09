@@ -97,6 +97,84 @@ h5 {
 a {
   text-decoration: none; }
 
+h4 {
+  position: relative;
+  -webkit-transition: 1.5s;
+  transition: 1.5s; }
+
+.span__title-active {
+  position: relative;
+  color: transparent;
+  -webkit-transition: 0.05s;
+  transition: 0.05s; }
+
+.span__title-active:before {
+  content: attr(data-text);
+  position: absolute;
+  font-weight: 900;
+  color: rgba(73, 87, 96, 0.9);
+  z-index: 1;
+  -webkit-animation: spananimation ease-in-out 0.8s;
+          animation: spananimation ease-in-out 0.8s; }
+
+@-webkit-keyframes spananimation {
+  6% {
+    -webkit-transform: translateY(-1.3px);
+            transform: translateY(-1.3px); }
+  9% {
+    -webkit-transform: translateY(1.3px);
+            transform: translateY(1.3px); }
+  11% {
+    -webkit-transform: translateX(1.3px);
+            transform: translateX(1.3px); }
+  17% {
+    -webkit-transform: translateY(1.3px);
+            transform: translateY(1.3px); }
+  20% {
+    -webkit-transform: translateY(-1.3px);
+            transform: translateY(-1.3px); }
+  22% {
+    -webkit-transform: translateX(-1.3px);
+            transform: translateX(-1.3px); }
+  55% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); }
+  80% {
+    -webkit-transform: scale(2.5, 1.2);
+            transform: scale(2.5, 1.2); }
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); } }
+
+@keyframes spananimation {
+  6% {
+    -webkit-transform: translateY(-1.3px);
+            transform: translateY(-1.3px); }
+  9% {
+    -webkit-transform: translateY(1.3px);
+            transform: translateY(1.3px); }
+  11% {
+    -webkit-transform: translateX(1.3px);
+            transform: translateX(1.3px); }
+  17% {
+    -webkit-transform: translateY(1.3px);
+            transform: translateY(1.3px); }
+  20% {
+    -webkit-transform: translateY(-1.3px);
+            transform: translateY(-1.3px); }
+  22% {
+    -webkit-transform: translateX(-1.3px);
+            transform: translateX(-1.3px); }
+  55% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); }
+  80% {
+    -webkit-transform: scale(2.5, 1.2);
+            transform: scale(2.5, 1.2); }
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); } }
+
 .header {
   top: 0;
   position: -webkit-sticky;
@@ -400,14 +478,28 @@ a {
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
       text-align: center;
-      font-size: 22px;
+      font-size: 20px;
       border: 1px solid #fff; }
     .works__box .front {
-      background: black; }
+      line-height: 1.3;
+      letter-spacing: 2px; }
     .works__box .back {
       background: black; }
       .works__box .back a {
-        color: black; }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        line-height: 1.2;
+        letter-spacing: 1.4px; }
     .works__box .miko {
       background: url("../img/w1.png"); }
     .works__box .weather {
@@ -416,6 +508,14 @@ a {
       background: url("../img/w3.png"); }
     .works__box .sh {
       background: url("../img/w4.png"); }
+    .works__box .ourstory {
+      background: url("../img/w5.png"); }
+    .works__box .viterra {
+      background: url("../img/w6.png"); }
+    .works__box .aqualux {
+      background: url("../img/w7.png"); }
+    .works__box .todoapp {
+      background: url("../img/w8.png"); }
     .works__box .front::after {
       position: absolute;
       top: 0;
@@ -428,7 +528,9 @@ a {
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
       -webkit-border-radius: 5px;
-              border-radius: 5px; }
+              border-radius: 5px;
+      background-color: #000;
+      opacity: 0.6; }
     .works__box .back {
       text-shadow: 1px 1px #000;
       position: absolute;
