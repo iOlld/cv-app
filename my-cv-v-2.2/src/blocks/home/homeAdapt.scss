@@ -1,0 +1,39 @@
+// @media screen and (max-width: 638px) {
+@media screen and (max-width: 668px) {
+
+    .home{
+        // display: none;
+        &__wrap{
+
+            // justify-content: space-between;
+
+            .home__left{
+                // margin-left: 15px;
+                min-width: 290px;
+                width: -webkit-fill-available;
+                // flex-grow: 1;
+
+                &::before{
+                    width: 50%;
+                    // left: 15px;
+                }
+
+            }
+
+            .home__right{
+                // margin: 0px 15px;
+                min-width: 270px;
+                // min-width: -webkit-fill-available;
+                width: -webkit-fill-available;
+                &::before{
+                    width: 100%;
+                }
+                // &::after{
+                //     min-width: 270px;
+                // }
+            }
+
+        }
+    }
+
+}

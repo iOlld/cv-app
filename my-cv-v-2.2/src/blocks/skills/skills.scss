@@ -1,7 +1,9 @@
 .skills{
     width: 100%;
-    margin-top: 120px;
-    margin-bottom: 60px;
+    margin: 120px 15px 60px 15px;
+    // margin-top: 120px;
+    // margin-bottom: 60px;
+    
     &__wrap{
         min-height: 300px;
         display: flex;
@@ -51,3 +53,5 @@
         transform: perspective(1000px) rotateY(360deg);
     }
 }
+
+@import './skillsAdapt.scss';

@@ -1,0 +1,25 @@
+// @media screen and (max-width: 638px) {
+@media screen and (max-width: 737px) {
+    .skills{
+        &__box{
+            width: 80px;
+            height: 80px;
+            span{
+                
+            transform: rotateY(calc(var(--i) * 27.69deg)) translateZ(300px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 668px) {
+    .skills{
+        &__box{
+            width: 60px;
+            height: 60px;
+            span{
+                
+            transform: rotateY(calc(var(--i) * 27.69deg)) translateZ(190px);
+            }
+        }
+    }
+}

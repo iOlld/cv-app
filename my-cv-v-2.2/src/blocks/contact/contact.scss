@@ -1,0 +1,37 @@
+.contact{
+    margin: 0px 15px;
+    // &__wrap{
+    //     // input[name='user-name']{width: 200px;}
+    //     // input[name='user-phone']{width: 200px;}
+    //     // input[name='user-email']{width: 200px;}
+    //     // textarea[name='user-massage']{width: 200px;}
+    // }
+
+    &__box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__input, &__textarea{
+        outline: none;
+        border-bottom: 2px solid #000;
+        width: 250px;
+
+        &:focus{
+            border-color: rgba(73, 87, 96, 0.9);
+            border-color: #e1e1e1;
+            border-color: #169999;
+        }
+    }
+
+    &__input{
+        height: 40px;
+    }
+
+    &__textarea{
+        width: 100%;
+        flex-grow: 1;
+    }
+}
