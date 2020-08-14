@@ -1,8 +1,9 @@
 section.contact
     .contact__wrap.container
         h4|Contact me
-        .contact__box
+        form.contact__box
             input.contact__input(type='text' name='user-name' placeholder="Имя" title="Ваше имя")
             input.contact__input(type='text' name='user-phone' placeholder="Ваш номер телефона" title="Ваш номер телефона, по желанию")
             input.contact__input(type='email' name='user-email' placeholder="Почта" title="Ваша почта")
-            textarea.contact__textarea(name="user-massage" placeholder="Сообщение" cols="30", rows="10")
+            textarea.contact__textarea(name="user-massage" placeholder="Сообщение" cols="30", rows="7")
+            button|send

@@ -116,5 +116,41 @@ h4{
     }
 }
 
+// wave
+button {
+    display: block;
+    color: #fff;
+    background: #232323;
+    padding: 0 50px;
+    position: relative;
+    overflow: hidden;
+    font: 700 18px/46px 'Arial';
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transition: background .25s;
+}
+  button:hover,
+  button.active {
+    background: #444;
+  }
+  .ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+    animation: ripple 0.5s linear;
+  }
+  @keyframes ripple {
+    100% {
+     transform: scale(2);
+     opacity: 0;
+    }
+  }
+
 
 @import './adaptGlobal.scss';

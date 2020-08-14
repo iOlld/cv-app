@@ -180,6 +180,53 @@ h4 {
     -webkit-transform: scale(1.4);
             transform: scale(1.4); } }
 
+button {
+  display: block;
+  color: #fff;
+  background: #232323;
+  padding: 0 50px;
+  position: relative;
+  overflow: hidden;
+  font: 700 18px/46px 'Arial';
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-transition: background .25s;
+  transition: background .25s; }
+
+button:hover,
+button.active {
+  background: #444; }
+
+.ripple {
+  width: 0;
+  height: 0;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  opacity: 1;
+  -webkit-animation: ripple 0.5s linear;
+          animation: ripple 0.5s linear; }
+
+@-webkit-keyframes ripple {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0; } }
+
+@keyframes ripple {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0; } }
+
 .header {
   top: 0;
   position: -webkit-sticky;
