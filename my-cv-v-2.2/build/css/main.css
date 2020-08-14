@@ -689,3 +689,25 @@ button.active {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
             flex-grow: 1; }
+
+.footer {
+  margin: 0px 15px; }
+  .footer__wrap ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row; }
+    .footer__wrap ul li a {
+      padding: 15px;
+      color: #000;
+      font-size: 50px;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+      .footer__wrap ul li a:hover {
+        color: #fff;
+        text-shadow: 0px 4px 9px #000;
+        -webkit-transition: 0.3s all ease;
+        transition: 0.3s all ease; }
