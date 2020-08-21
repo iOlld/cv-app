@@ -181,7 +181,9 @@ h4 {
             transform: scale(1.4); } }
 
 button {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
   color: #fff;
   background: #232323;
   padding: 0 50px;
@@ -677,7 +679,8 @@ button.active {
   .contact__input, .contact__textarea {
     outline: none;
     border-bottom: 2px solid #000;
-    width: 250px; }
+    width: 250px;
+    margin-top: 20px; }
     .contact__input:focus, .contact__textarea:focus {
       border-color: rgba(73, 87, 96, 0.9);
       border-color: #e1e1e1;
@@ -689,6 +692,19 @@ button.active {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
             flex-grow: 1; }
+  .contact__btn-wrap {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+
+@media screen and (max-width: 668px) {
+  .contact__input {
+    width: 100%; } }
 
 .footer {
   margin: 0px 15px; }
