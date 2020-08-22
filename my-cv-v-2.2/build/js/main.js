@@ -5,7 +5,7 @@
 
     for(i = 0; i < arrText.length; i++){
         let inSpan = arrText[i].innerText.split('').map(function(symb){
-            return `<span class="span__title" data-text="${symb}">${symb}</span>`
+            return `<span class="span__title" data-text="${symb}">${symb}</span>`;
         });
         arrText[i].innerHTML = inSpan.join('');
     }
@@ -27,6 +27,7 @@ function spanAddStyle() {
     }, 800);
 };
 
+// Анимация волны кнопки
 let links = document.querySelectorAll("button");
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', function (event) {

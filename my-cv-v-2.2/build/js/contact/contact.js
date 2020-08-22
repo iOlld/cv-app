@@ -8,21 +8,36 @@ const SUBMIT = FORM["submit-btn"];
 
 const checkEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
 
+
 const CHECK_Email = function(){
     // console.log(this)
     console.log(EMAIL.value)
     if(checkEmail.test(EMAIL.value.trim())){
         console.log('+');
-        this.style.borderBottom = '2px solid green';
+        this.style.borderBottom = '2px solid #00c853';
     } else {
         console.log('-')
-        this.style.borderBottom = '2px solid red';
+        this.style.borderBottom = '2px solid #bf360c';
         
         // border-bottom: 2px solid #000;
     }
 }
 
 EMAIL.oninput = CHECK_Email
+
+// Так себе проверка
+const CHECK_Name = function() {
+
+    if(NAME.value.trim().length >= 2){
+        console.log('+');
+        this.style.borderBottom = '2px solid #00c853';
+    } else {
+        console.log('-')
+        this.style.borderBottom = '2px solid #bf360c';
+    }
+}
+
+NAME.oninput = CHECK_Name
 
 
 const FUNC_CHECK = function () {

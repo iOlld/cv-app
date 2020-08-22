@@ -10,148 +10,148 @@
     }
 
     &__box{
-        // position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-                
-        .img-area {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .single-img {
-            // width: 290px;
-            width: 260px;
-            margin: 16px;
-            cursor: pointer;
-        }
-        
-        .img-content {
-            transform-style: preserve-3d;
-            perspective: 1000px;
-        }
-        
-        .front, .back {
-            // min-height: 300px;
-            min-height: 260px;
-            height: auto;
-            border-radius: 5px;
-            color: #fff;
-            background-size: cover;
-            transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-            backface-visibility: hidden;
-            text-align: center;
-            font-size: 20px;
-            border: 1px solid #fff;
-            // cursor: pointer;
-        }
-
-        .front{
-            line-height: 1.3;
-            letter-spacing: 2px;
-        }
-        
-        .back {
-            background: black;
-
-            a{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                color: #fff;
-                line-height: 1.2;
-                letter-spacing: 1.4px;
-            }
-        }
-
-        .miko{
-            background: url('../img/w1.png');
-        }
-        .weather{
-            background: url('../img/w2.png');
-        }
-        .petproject{
-            background: url('../img/w3.png');
-        }
-        .sh{
-            background: url('../img/w4.png');
-        }
-        .ourstory{
-            background: url('../img/w5.png');
-        }
-        .viterra{
-            background: url('../img/w6.png');
-        }
-        .aqualux{
-            background: url('../img/w7.png');
-        }
-        .todoapp{
-            background: url('../img/w8.png');
-        }
-        
-        .front::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            content: "";
-            display: block;
-            backface-visibility: hidden;
-            border-radius: 5px;
-            background-color: #000;
-            opacity: 0.6;
-        }
-        
-        .back {
-            text-shadow: 1px 1px #000;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-        
-        .inner {
-            transform: translateY(-50%) translateZ(60px) scale(0.9);
-            top: 50%;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            padding: 2rem;
-            box-sizing: border-box;
-            perspective: inherit;
-            z-index: 2;
-        }
-        
-        .front .inner p {
-            position: relative;
-            font-size: 40px;
-        }
-        
-        .img-content .back {
-            transform: rotateY(180deg);
-            transform-style: preserve-3d;
-        }
-        
-        .img-content:hover .back {
-            transform: rotateY(0deg);
-            transform-style: preserve-3d;
-        }
-        
-        .img-content .front {
-            transform: rotateY(0deg);
-            transform-style: preserve-3d;
-        }
-        
-        .img-content:hover .front {
-            transform: rotateY(-180deg);
-            transform-style: preserve-3d;
-        }
     }
+}
+
+// Стили для примеров работ
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single-img {
+    width: 260px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.img-content {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front, .back {
+    min-height: 260px;
+    height: auto;
+    border-radius: 5px;
+    color: #fff;
+    background-size: cover;
+    transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.front{
+    line-height: 1.3;
+    letter-spacing: 2px;
+}
+
+.back {
+    background: black;
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        line-height: 1.2;
+        letter-spacing: 1.4px;
+    }
+}
+
+
+
+.front::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.back {
+    text-shadow: 1px 1px #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner {
+    transform: translateY(-50%) translateZ(60px) scale(0.9);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.front .inner p {
+    position: relative;
+    font-size: 40px;
+}
+
+.img-content .back {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.img-content:hover .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.img-content .front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.img-content:hover .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+// Фон/картинки примеров работ
+.miko{
+    background: url('../img/w1.png');
+}
+.weather{
+    background: url('../img/w2.png');
+}
+.petproject{
+    background: url('../img/w3.png');
+}
+.sh{
+    background: url('../img/w4.png');
+}
+.ourstory{
+    background: url('../img/w5.png');
+}
+.viterra{
+    background: url('../img/w6.png');
+}
+.aqualux{
+    background: url('../img/w7.png');
+}
+.todoapp{
+    background: url('../img/w8.png');
 }
