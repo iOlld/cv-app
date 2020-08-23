@@ -14,16 +14,16 @@
         <div class="header__wrap container"><a class="header__logo-link" href="index.html">iOld</a>
           <nav class="header__nav">
             <ul>
-              <li><a data-text="Home" href="#">Home</a></li>
-              <li><a data-text="About" href="#">About</a></li>
-              <li><a data-text="Skills" href="#">Skills</a></li>
-              <li><a data-text="Works" href="#">Works</a></li>
-              <li><a data-text="Contacts" href="#">Contacts</a></li>
+              <li><a data-text="Цель" href="#target">Цель</a></li>
+              <li><a data-text="Образование" href="#education">Образование</a></li>
+              <li><a data-text="Навыки" href="#skills">Навыки</a></li>
+              <li><a data-text="Работы" href="#works">Работы</a></li>
+              <li><a data-text="Написать" href="#contact">Написать</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      <section class="home">
+      <section class="home" id="home">
         <div class="home__wrap container">
           <div class="home__left">
             <div class="home__title">
@@ -35,29 +35,47 @@
           <div class="home__right"></div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="target">
         <div class="about__wrap container">
-          <h4>ABOUT</h4>
+          <h4>ЦЕЛЬ</h4>
           <h5>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quibusdam amet voluptates itaque sit eligendi corporis voluptatem. 
-            Tempora sapiente distinctio, quaerat ea expedita eum incidunt ipsam minus officia, impedit soluta.
+            IT сфера мне нравится тем, что здесь нужно постоянно учиться и развиваться, если остановишься то окажешься за бортом.Я долго выбирал с чего начать, что учить, что мне будет интересно и в каком направлении начать свой путь в IT. 
+            В итоге я выбрал Front-end. Это очень интересная, перспективная и стремительно развивающаяся область IT индустрии.
+            Сейчас ищу работу на позицию Junior front-end developer, а также рассматривается вариант стажировки.
           </h5>
         </div>
       </section>
-      <section class="skills">
+      <section class="education" id="education">
+        <div class="education__wrap container">
+          <h4>ОБРАЗОВАНИЕ</h4>
+          <div class="education__item">
+            <h5>06.2020 по настоящее время курс на Udemy "React + Redux - Профессиональная Разработка"</h5>
+            <h5>03.2020 - 04.2020 курс "OOP in JS" от Александр Лущенко</h5>
+            <h5>01.2020 - 03.2020 курс "React. Lite Level" от Александр Лущенко</h5>
+            <h5>01.2020 - 03.2020 курс "React. Lite Level" от Александр Лущенко</h5>
+            <h5>09.2019 - 12.2019 курс "JavaScript v 2.0" от Александр Лущенко</h5>
+            <h5>06.2019 - 08.2019 курс "Практический JavaScript" от Александр Лущенко</h5>
+            <h5>02.2019 - 06.2019 онлайн курс "Front-end" от CURSOR.EDUCATION</h5>
+            <h5>09.2018 - 12.2018 очный курс "Front-end" от PROG.KIEV.UA</h5>
+            <h5>2005 - 2009 <br/>Конотопский институт Сумского государственного университета<br/>Факультет "Экономика предприятий"</h5>
+            <h5>2002 - 2006<br/>Украинский государственный университет железнодорожного транспорта<br/>Факультет "Управление процесами перевозок"</h5>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
         <div class="skills__wrap container">
-          <h4>MY SKILLS</h4>
+          <h4>МОИ НАВЫКИ</h4>
           <div class="skills__box"><span style="--i:1"><img src="./img/html4.png" alt=""/></span><span style="--i:2"><img src="./img/css1.png" alt=""/></span><span style="--i:3"><img src="./img/js1.png" alt=""/></span><span style="--i:4"><img src="./img/sass1.png" alt=""/></span><span style="--i:5"><img src="./img/pug1.png" alt=""/></span><span style="--i:6"><img src="./img/npm1.png" alt=""/></span><span style="--i:7"><img src="./img/gulp2.png" alt=""/></span><span style="--i:8"><img src="./img/react4.png" alt=""/></span><span style="--i:9"><img src="./img/ajax1.png" alt=""/></span><span style="--i:10"><img src="./img/json1.png" alt=""/></span><span style="--i:11"><img src="./img/figma1.png" alt=""/></span><span style="--i:12"><img src="./img/photoshop2.png" alt=""/></span><span style="--i:13"><img src="./img/git1.png" alt=""/></span></div>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="works">
         <div class="works__wrap container">
-          <h4>MY WORKS</h4>
+          <h4>МОИ РАБОТЫ</h4>
           <div class="works__box">
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front miko"><a class="inner" href="#" onclick="return false;">Лендинг тестовое</a></div>
+                  <div class="front miko"><a class="inner inner-front" href="#">Лендинг тестовое</a></div>
                   <div class="back"><a class="inner" href="https://zheka-ded.github.io/everad-test/build/index.html" target="blank">Тестовое задание на позицию <br/>junior html coder</a></div>
                 </div>
               </div>
@@ -65,7 +83,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front weather"><a class="inner" href="#" onclick="return false;">Погода</a></div>
+                  <div class="front weather"><a class="inner inner-front" href="#">Погода</a></div>
                   <div class="back"><a class="inner" href="https://zheka-ded.github.io/firstWeather/build/index.html" target="blank">Сайт погоды на JavaScript</a></div>
                 </div>
               </div>
@@ -73,7 +91,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front petproject"><a class="inner" href="#" onclick="return false;">Погода и курс валют</a></div>
+                  <div class="front petproject"><a class="inner inner-front" href="#">Погода и курс валют</a></div>
                   <div class="back"><a class="inner" href="https://first-4c331.firebaseapp.com/" target="blank">Сайт/приложение погоды и курса валют на React<br/>правда дизайн еще в процессе</a></div>
                 </div>
               </div>
@@ -81,7 +99,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front sh"><a class="inner" href="#" onclick="return false;">Лендинг фриланс</a></div>
+                  <div class="front sh"><a class="inner inner-front" href="#">Лендинг фриланс</a></div>
                   <div class="back"><a class="inner" href="https://zheka-ded.github.io/sh/build/" target="blank">Лендинг с отправкой формы<br/>фриланс заказ</a></div>
                 </div>
               </div>
@@ -89,7 +107,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front ourstory"><a class="inner" href="#" onclick="return false;">Лендинг тестовое</a></div>
+                  <div class="front ourstory"><a class="inner inner-front" href="#">Лендинг тестовое</a></div>
                   <div class="back"><a class="inner" href="https://zheka-ded.github.io/test_task/public/" target="blank">Первое тестовое задание на позицию<br/>junior html coder</a></div>
                 </div>
               </div>
@@ -97,7 +115,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front viterra"><a class="inner" href="#" onclick="return false;">Лендинг фриланс</a></div>
+                  <div class="front viterra"><a class="inner inner-front" href="#">Лендинг фриланс</a></div>
                   <div class="back"><a class="inner" href="https://zheka-ded.github.io/viterraTradeFW/build/index.html" target="blank">Фриланс заказ верстки страниц для торговой площадки</a></div>
                 </div>
               </div>
@@ -105,7 +123,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front aqualux"><a class="inner" href="#" onclick="return false;">Сортировка таблицы тестовое</a></div>
+                  <div class="front aqualux"><a class="inner inner-front" href="#">Сортировка таблицы тестовое</a></div>
                   <div class="back"><a class="inner" href="https://zheka-ded.github.io/aquaLuxTest/" target="blank">Тестовое задание, вывод данных в таблицу, при клике на заголовок таблицы сортировка данных по возростанию и по убыванию</a></div>
                 </div>
               </div>
@@ -113,7 +131,7 @@
             <div class="img-area">
               <div class="single-img">
                 <div class="img-content">
-                  <div class="front todoapp"><a class="inner" href="#" onclick="return false;">Список дел</a></div>
+                  <div class="front todoapp"><a class="inner inner-front" href="#">Список дел</a></div>
                   <div class="back"><a class="inner" href="https://my-to-do-app-548b2.web.app/" target="blank">Приложение "список дел" с сохранением данных в localStorage написанное на<br/>React</a></div>
                 </div>
               </div>
@@ -121,16 +139,16 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__wrap container">
-          <h4>CONTACT ME</h4>
+          <h4>НАПИСАТЬ МНЕ</h4>
           <form class="contact__box">
             <input class="contact__input" type="text" name="user-name" placeholder="Имя"/>
             <input class="contact__input" type="number" name="user-phone" placeholder="Номер телефона (по желанию)"/>
             <input class="contact__input" type="email" name="user-email" placeholder="Почта"/>
             <textarea class="contact__textarea" name="user-message" placeholder="Сообщение" cols="30" rows="7"></textarea>
             <div class="contact__btn-wrap">
-              <button type="submit" name="submit-btn">send</button>
+              <button type="submit" name="submit-btn">ОТПРАВИТЬ</button>
             </div>
           </form>
         </div>
@@ -138,17 +156,19 @@
       <footer class="footer">
         <div class="footer__wrap container">
           <ul>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href=" http://fb.com/iOlld" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="http://github.com/Zheka-ded" target="blank"><i class="fab fa-github-alt"></i></a></li>
+            <li><a href="http://linkedin.com/in/евгений-шевченко-49b53a176" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="http://t.me/iOlld" target="blank"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href="skype:shervinator2?call" target="blank"><i class="fab fa-skype"></i></a></li>
           </ul>
-          <div class="footer__link-up"><i class="fas fa-arrow-alt-circle-up"></i></div>
+          <div class="footer__link-up"><a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a></div>
         </div>
       </footer>
     </div>
     <script src="./js/header/header.js"></script>
     <script src="./js/home/home.js"></script>
+    <script src="./js/works/works.js"></script>
     <script src="./js/contact/contact.js"></script>
     <script src="./js/main.js"></script>
   </body>

@@ -1,10 +1,12 @@
-.about{
+.education{
     width: 100%;
     margin: 0px 15px;
     margin-top: 120px;
     &__wrap{
         max-width: 700px;
         padding: 0px 15px;
+    }
+    &__item{
         h5{
             text-align: left;
             line-height: 1.5;

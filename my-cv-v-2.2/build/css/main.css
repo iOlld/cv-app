@@ -185,7 +185,7 @@ button {
   display: -webkit-flex;
   display: flex;
   color: #fff;
-  background: #232323;
+  background: #000;
   padding: 0 50px;
   position: relative;
   overflow: hidden;
@@ -250,7 +250,7 @@ button.active {
     -webkit-box-align: center;
     -webkit-align-items: center;
             align-items: center;
-    padding: 15px 20px;
+    padding: 15px 15px;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
     .header__wrap .header__nav ul {
@@ -309,7 +309,7 @@ button.active {
   transition: 0.3s all ease; }
 
 .header-wrap__scroll {
-  padding: 5px 20px;
+  padding: 5px 15px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   -webkit-box-shadow: 0px 1px 11px 2px #93b0c3;
@@ -423,7 +423,22 @@ button.active {
   margin: 0px 15px;
   margin-top: 120px; }
   .about__wrap {
-    max-width: 700px; }
+    max-width: 700px;
+    padding: 0px 15px; }
+    .about__wrap h5 {
+      text-align: left;
+      line-height: 1.5; }
+
+.education {
+  width: 100%;
+  margin: 0px 15px;
+  margin-top: 120px; }
+  .education__wrap {
+    max-width: 700px;
+    padding: 0px 15px; }
+  .education__item h5 {
+    text-align: left;
+    line-height: 1.5; }
 
 .skills {
   width: 100%;
@@ -793,14 +808,20 @@ button.active {
           text-shadow: 0px 4px 9px #000;
           -webkit-transition: 0.3s all ease;
           transition: 0.3s all ease; }
-  .footer__link-up {
+  .footer__link-up a {
     padding: 15px;
     color: #000;
     font-size: 50px;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
-    .footer__link-up:hover {
+    .footer__link-up a:hover {
       color: #fff;
       text-shadow: 0px 4px 9px #000;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
+
+@media screen and (max-width: 668px) {
+  .footer__wrap ul li a {
+    font-size: 30px; }
+  .footer__link-up a {
+    font-size: 30px; } }
