@@ -1,7 +1,9 @@
 @media screen and (max-width: 668px) {
     .footer{
         &__wrap{
+            
             ul{
+
                 li{
                     a{
                         font-size: 30px;
@@ -13,6 +15,18 @@
         &__link-up{
             a{
                 font-size: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer{
+
+        &__wrap{
+            align-items: flex-end;
+            
+            ul{
+                flex-direction: column;
             }
         }
     }

@@ -1,6 +1,5 @@
 (function (){
 
-    // let arrText = document.querySelectorAll(`.title__text`);
     let arrText = document.querySelectorAll(`h4`);
 
     for(i = 0; i < arrText.length; i++){
@@ -28,7 +27,7 @@ function spanAddStyle() {
 };
 
 // Анимация волны кнопки
-let links = document.querySelectorAll("button");
+let links = document.querySelectorAll(`button[name="submit-btn"]`);
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', function (event) {
         event.preventDefault();

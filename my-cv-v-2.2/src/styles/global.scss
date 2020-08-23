@@ -1,9 +1,6 @@
-// Переменные
-$white-tetx-color: #fff; // Белый цвет
-
 // Основные стили
 .body{
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     min-width: 200px;
     max-width: 1366px;
@@ -15,7 +12,6 @@ $white-tetx-color: #fff; // Белый цвет
     display: flex;
     flex-direction: column;
     align-items: center;
-    // margin: 0px 15px;
 }
 
 
@@ -67,11 +63,8 @@ h4{
     transition: 1.5s;
 }
 
-
 .span__title-active{
     position: relative;
-    // color: rgb(37, 35, 35);
-    // // font-weight: 900;
     color: transparent;
     transition: 0.05s;
 }
@@ -83,7 +76,6 @@ h4{
     color: rgba(73, 87, 96, 0.9);
     z-index: 1;
     animation: spananimation ease-in-out 0.8s;
-
 }
 
 @keyframes spananimation{
@@ -117,10 +109,9 @@ h4{
 }
 
 // wave
-button {
+button[name="submit-btn"] {
     display: flex;
     color: #fff;
-    // background: #232323;
     background: #000;
     padding: 0 50px;
     position: relative;
@@ -132,10 +123,11 @@ button {
     cursor: pointer;
     transition: background .25s;
 }
-  button:hover,
-  button.active {
+  button[name="submit-btn"]:hover,
+  button[name="submit-btn"].active {
     background: #444;
   }
+
   .ripple {
     width: 0;
     height: 0;
@@ -146,12 +138,10 @@ button {
     opacity: 1;
     animation: ripple 0.5s linear;
   }
+
   @keyframes ripple {
     100% {
      transform: scale(2);
      opacity: 0;
     }
   }
-
-
-@import './adaptGlobal.scss';

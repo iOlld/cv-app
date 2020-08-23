@@ -1,8 +1,6 @@
 .skills{
     width: 100%;
     margin: 120px 15px 60px 15px;
-    // margin-top: 120px;
-    // margin-bottom: 60px;
     
     &__wrap{
         min-height: 300px;
@@ -31,7 +29,6 @@
             transform-origin: center;
             transform-style: preserve-3d;
             transform: rotateY(calc(var(--i) * 27.69deg)) translateZ(400px);
-            // -webkit-box-refrect: below 0px linear-gradient(transparent, transparent, #0004);
             
             img{
                 position: absolute;
