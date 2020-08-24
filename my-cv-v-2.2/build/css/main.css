@@ -270,11 +270,13 @@ button[name="submit-btn"].active {
         margin-right: 0px; }
       .header__ul li a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         position: relative;
         -webkit-transition: 0.4s;
         transition: 0.4s;
-        text-shadow: 1px 2px 2px #292c2c; }
+        text-shadow: 2px 1px 3px #000;
+        font-size: 18px;
+        font-weight: 600; }
         .header__ul li a:hover::before {
           width: 103%; }
         .header__ul li a:hover::after {
@@ -283,14 +285,14 @@ button[name="submit-btn"].active {
           content: attr(data-text);
           position: absolute;
           width: 0%;
-          text-shadow: 1px 0px 0px #322596;
+          text-shadow: 2px 2px 2px black;
           overflow: hidden;
           -webkit-transition: 0.4s;
           transition: 0.4s; }
         .header__ul li a::after {
           content: '';
           position: absolute;
-          background: #1b125f;
+          background: black;
           width: 0%;
           height: 3px;
           -webkit-border-radius: 2px;
@@ -332,6 +334,8 @@ button[name="submit-btn"].active {
       border: none;
       -webkit-border-radius: 2px;
               border-radius: 2px;
+      -webkit-transition: all 0.3s 0.3s;
+      transition: all 0.3s 0.3s;
       position: relative; }
       .header__burger-span::before, .header__burger-span::after {
         content: '';

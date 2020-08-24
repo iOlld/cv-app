@@ -81,7 +81,7 @@ const errorMessage = () => {
     setTimeout(()=>{
         clearValue();
         box.remove();
-    }, 3000)
+    }, 4000)
 };
 
 const clearValue = () => {
