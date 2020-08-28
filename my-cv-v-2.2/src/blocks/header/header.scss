@@ -3,7 +3,6 @@
     position: sticky;
     width: 100%;
     z-index: 100;
-    font-family: 'Courier New', Courier, monospace;
 
     &__wrap{
         position: relative;
@@ -21,22 +20,19 @@
         flex-wrap: wrap;
 
         li{
-            margin: 0px 20px;
+            margin: 0px 17px;
 
             &:last-child{
-                margin-right: 0px;
+                margin-right: 2px;
             }
 
             a{
                 text-decoration: none;
-                // color: #000;
                 color: #fff;
                 position: relative;
                 transition: 0.4s;
-                // text-shadow: 1px 2px 2px #292c2c;
-                text-shadow: 2px 1px 3px #000;
+                text-shadow: 2px 1px 2px #000;
                 font-size: 18px;
-                font-weight: 600;
     
                 &:hover::before{
                     width: 103%;
@@ -50,7 +46,6 @@
                     content: attr(data-text);
                     position: absolute;
                     width: 0%;
-                    // text-shadow: 1px 0px 0px rgb(50, 37, 150);
                     text-shadow: 2px 2px 2px rgb(0, 0, 0);
                     overflow: hidden;
                     transition: 0.4s;
@@ -59,7 +54,6 @@
                 &::after{
                     content: '';
                     position: absolute;
-                    // background: rgb(27, 18, 95);
                     background: rgb(0, 0, 0);
                     width: 0%;
                     height: 3px;
@@ -73,13 +67,11 @@
     }
 
     &__logo-link{
-        color: #000;
-        // color: #fff;
+        color: #fff;
         font-size: 30px;
         text-decoration: none;
-        text-shadow: 0px 4px 2px #292c2c;
-        // font-weight: 600;
-        // text-shadow: 1px 1px 1px #000;
+
+        text-shadow: 2px 1px 2px #000;
     }
     
     &__burger-wrap{
@@ -150,16 +142,12 @@
 
 .header__scroll{
     transition: 0.3s all ease;
-    // box-shadow: 0px 11px 10px -5px #000;
-    box-shadow: 0px 5px 11px -2px #000;
+    box-shadow: 0px 1px 6px -2px #000;
 }
 
 .header-wrap__scroll{
     padding: 5px 15px;
     transition: 0.3s all ease;
-    
-    // box-shadow: 0px 1px 11px 2px #93b0c3;
-    // background-color: rgba(73, 87, 96, 0.9);
     background-color: rgba(255, 255, 255, 0.9);
 }
 

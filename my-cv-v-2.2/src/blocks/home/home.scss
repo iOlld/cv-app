@@ -40,9 +40,25 @@
                 font-weight: bold;
                 line-height: 1.2;
             }
+        }
 
+        .home__right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 500px;
+            background: #e1e1e1;
+            position: relative;
+            
+            .home__title{
+                margin-left: 15px;
+                z-index: 1;
+                letter-spacing: 2px;
+            }
+            
             h2{
-                font-size: 22px;
+                font-size: 32px;
                 color: rgba(33, 33, 33, 0.902);
                 line-height: 2.5;
                 z-index: 1;
@@ -51,38 +67,29 @@
             h3{
                 z-index: 1;
             }
-        }
-
-        .home__right{
-            display: flex;
-            align-items: center;
-            width: 50%;
-            min-height: 500px;
-            background: #e1e1e1;
-            position: relative;
 
             &::before{
                 content: '';
                 position: absolute;
-                width: 30%;
+                width: 60%;
                 height: 55%;
                 border: 11px solid #fff;
                 border-right: none;
                 right: 0;
                 z-index: 0;
             }
-            &::after{
-                content: '';
-                position: absolute;
-                min-width: 280px;
-                height: 400px;
-                background: url('../img/student4.jpg');
-                background-position: center;
-                background-size: cover;
-                border: 11px solid #fff;
-                left: 0;
-                z-index: 0;
-            }
+            // &::after{
+            //     content: '';
+            //     position: absolute;
+            //     min-width: 280px;
+            //     height: 400px;
+            //     // background: url('../img/student4.jpg');
+            //     // background-position: center;
+            //     // background-size: cover;
+            //     border: 11px solid #fff;
+            //     left: 0;
+            //     z-index: 0;
+            // }
         }
     }
 }
