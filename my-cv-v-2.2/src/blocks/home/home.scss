@@ -56,6 +56,15 @@
                 z-index: 1;
                 letter-spacing: 2px;
             }
+
+            
+            p{
+                font-size: 46px;
+                color: rgb(33, 33, 33);
+                font-weight: bold;
+                line-height: 1.2;
+                display: none;
+            }
             
             h2{
                 font-size: 32px;
@@ -78,18 +87,6 @@
                 right: 0;
                 z-index: 0;
             }
-            // &::after{
-            //     content: '';
-            //     position: absolute;
-            //     min-width: 280px;
-            //     height: 400px;
-            //     // background: url('../img/student4.jpg');
-            //     // background-position: center;
-            //     // background-size: cover;
-            //     border: 11px solid #fff;
-            //     left: 0;
-            //     z-index: 0;
-            // }
         }
     }
 }

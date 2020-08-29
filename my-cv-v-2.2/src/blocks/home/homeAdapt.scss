@@ -6,9 +6,12 @@
                 min-width: 290px;
                 width: -webkit-fill-available;
 
+
                 &::before{
                     width: 50%;
                 }
+
+                display: none;
 
             }
 
@@ -17,6 +20,15 @@
                 width: -webkit-fill-available;
                 &::before{
                     width: 100%;
+                }
+
+                p{
+                    display: block;
+                    line-height: 1.5;
+                }
+
+                h2{
+                    line-height: 1.5;
                 }
             }
 

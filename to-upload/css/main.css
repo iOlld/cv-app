@@ -558,6 +558,12 @@ button[name="submit-btn"].active {
         margin-left: 15px;
         z-index: 1;
         letter-spacing: 2px; }
+      .home__wrap .home__right p {
+        font-size: 46px;
+        color: #212121;
+        font-weight: bold;
+        line-height: 1.2;
+        display: none; }
       .home__wrap .home__right h2 {
         font-size: 32px;
         color: rgba(33, 33, 33, 0.902);
@@ -578,14 +584,20 @@ button[name="submit-btn"].active {
 @media screen and (max-width: 668px) {
   .home__wrap .home__left {
     min-width: 290px;
-    width: -webkit-fill-available; }
+    width: -webkit-fill-available;
+    display: none; }
     .home__wrap .home__left::before {
       width: 50%; }
   .home__wrap .home__right {
     min-width: 270px;
     width: -webkit-fill-available; }
     .home__wrap .home__right::before {
-      width: 100%; } }
+      width: 100%; }
+    .home__wrap .home__right p {
+      display: block;
+      line-height: 1.5; }
+    .home__wrap .home__right h2 {
+      line-height: 1.5; } }
 
 .about {
   width: 100%;
